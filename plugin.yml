@@ -1,0 +1,10 @@
+---
+name: HeoLevel
+author: JeroGamingYT
+main: NuoiHeo\Main
+api: 3.0.0
+version: 1.1.1
+commands:
+ heo:
+  description: "Nuôi Heo"
+...
