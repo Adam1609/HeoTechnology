@@ -5,4 +5,5 @@ branches:
 projects:
   HeoTechnology:
     path: ""
+    icon: icon.png
 ...
