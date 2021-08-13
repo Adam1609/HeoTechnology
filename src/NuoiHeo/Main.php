@@ -79,7 +79,7 @@ class Main extends PluginBase implements Listener
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
     {
         switch ($command->getName()) {
-            case "heo":
+            case "pig":
                 $this->menu($sender);
                 return true;
         }
