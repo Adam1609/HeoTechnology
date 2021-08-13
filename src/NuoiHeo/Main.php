@@ -10,7 +10,7 @@ use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\command\{Command, CommandSender, ConsoleCommandSender};
 use pocketmine\event\player\{PlayerJoinEvent, PlayerQuitEvent};
 use pocketmine\scheduler\ClosureTask;
-
+use jojoe77777\FormAPI\{SimpleForm, CustomForm, ModalForm};
 class Main extends PluginBase implements Listener
 {
     public $prefix = "PIG TECHNOLOGY";
@@ -88,8 +88,7 @@ class Main extends PluginBase implements Listener
 
     public function menu($sender)
     {
-        $formapi = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $formapi->createSimpleForm(function (Player $sender, $data) {
+        $form = new SimpleForm(function (Player $sender, $data) {
             $result = $data;
             if ($result === null) {
             }
@@ -113,8 +112,7 @@ class Main extends PluginBase implements Listener
 
     public function heo($sender)
     {
-        $formapi = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $formapi->createSimpleForm(function (Player $sender, $data) {
+        $form = new SimpleForm(function (Player $sender, $data) {
             $result = $data;
             if ($result === null) {
             }
@@ -209,8 +207,7 @@ class Main extends PluginBase implements Listener
 			}
 		}
 		
-		$formapi = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-		$form = $formapi->createSimpleForm(function (Player $sender, ?int $data = null){
+		$form = new SimpleForm(function (Player $sender, ?int $data = null){
 			$result = $data;
 			switch($result){
 				case 0:
