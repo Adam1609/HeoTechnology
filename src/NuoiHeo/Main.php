@@ -14,7 +14,7 @@ use pocketmine\scheduler\ClosureTask;
 class Main extends PluginBase implements Listener
 {
     public $prefix = "PIG TECHNOLOGY";
-
+    public $money, $coin, $no, $ta, $lv;
     public function onEnable()
     {
         $this->getLogger()->info("PIG TECHNOLOGY ON");
