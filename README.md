@@ -1,3 +1,8 @@
+[![](https://poggit.pmmp.io/shield.state/Pigtechnology)](https://poggit.pmmp.io/p/Pigtechnology)
+<a href="https://poggit.pmmp.io/p/Pigtechnology"><img src="https://poggit.pmmp.io/shield.state/Pigtechnology"></a>
+[![](https://poggit.pmmp.io/shield.api/Pigtechnology)](https://poggit.pmmp.io/p/Pigtechnology)
+<a href="https://poggit.pmmp.io/p/Pigtechnology"><img src="https://poggit.pmmp.io/shield.api/Pigtechnology"></a>
+
 # Youtuber
 Video Review [here](https://www.youtube.com/watch?v=0LCCI0Kvg9o&amp;t).
 
