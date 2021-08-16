@@ -20,7 +20,7 @@ class Main extends PluginBase implements Listener
         $this->getLogger()->info("PIG TECHNOLOGY ON");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->money = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
-        $this->coin = $this->getServer()->getPluginManager()->getPlugin("PointAPI");
+        //$this->coin = $this->getServer()->getPluginManager()->getPlugin("PointAPI"); (Delete // if you already has this plugin)
        @mkdir($this->getDataFolder());
         $this->no = new Config($this->getDataFolder() . "no.yml", Config::YAML);
         $this->ta = new Config($this->getDataFolder() . "thucan.yml", Config::YAML);
@@ -64,10 +64,10 @@ class Main extends PluginBase implements Listener
                     $p->sendMessage("§6Bạn Đã Nhận Được§a" . $b . "§6$ Khi Mine(Xu Này Từ Heo Của Bạn)");
                     $this->money->addMoney($p, $b);
                     break;
-                case 70:
+                /*case 70:
                     $this->coin->addPoint($p, $c);
                     $p->sendMessage("§6Bạn Đã Nhận Được§a" . $c . "§6Point Khi Mine(Point Này Từ Heo Của Bạn)");
-                    break;
+                    break;*/ // (Again delete this if you already had the plugin)
                 default:
                     break;
             }
